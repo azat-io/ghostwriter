@@ -1,0 +1,104 @@
+{
+  "queries": [
+    {
+      "id": 1,
+      "prompt": "This README opening is accurate but hard for warehouse staff to follow. Rewrite it in plain English, keeping the file-size limit and the warning that imports cannot be undone.",
+      "should_trigger": true
+    },
+    {
+      "id": 2,
+      "prompt": "Review this PR description before I post it. Point out misleading claims and give local fixes; don't rewrite the whole description: ‘This completely eliminates flaky uploads. I tested one interrupted upload locally.’",
+      "should_trigger": true
+    },
+    {
+      "id": 3,
+      "prompt": "Draft a customer incident update from this timeline: requests failed from 14:10 to 14:28 UTC, 12% of requests in EU only; we rolled back at 14:28. Whether any queued jobs were lost is still unknown. Keep that uncertainty visible.",
+      "should_trigger": true
+    },
+    {
+      "id": 4,
+      "prompt": "Help me write a cover letter for a Go backend role. I have three years of Go at work and one weekend Rust project. The listing accepts either language; please make the strongest honest case from these notes.",
+      "should_trigger": true
+    },
+    {
+      "id": 5,
+      "prompt": "Our homepage says ‘The ultimate platform for effortless compliance.’ What can we actually say if the product only exports audit logs as CSV? Give me a headline and two sentences without promising certification.",
+      "should_trigger": true
+    },
+    {
+      "id": 6,
+      "prompt": "Turn these changes into release notes: minimum Node version is now 22, the callback API was removed, and uploads can resume after reconnecting. Put the upgrade impact first and don't invent migration commands.",
+      "should_trigger": true
+    },
+    {
+      "id": 7,
+      "prompt": "Improve this error message for someone who does not know what a token is: ‘Authorization failed.’ We know the sign-in session expired and the user can sign in again. Keep it to one sentence.",
+      "should_trigger": true
+    },
+    {
+      "id": 8,
+      "prompt": "Edit my speaker bio for a database conference. I reviewed a migration plan; I did not lead the migration. Keep that distinction, and keep the bio under 60 words.",
+      "should_trigger": true
+    },
+    {
+      "id": 9,
+      "prompt": "Use Ghostwriter to check this already short runbook paragraph. If it is clear and accurate, leave it alone: ‘Select Retry to send the failed batch again. Retry does not resend records marked Complete.’",
+      "should_trigger": true
+    },
+    {
+      "id": 10,
+      "prompt": "Make this team announcement less stiff without hiding the change: ‘Effective immediately, all personnel are hereby advised that the build allowance shall be reduced from 10,000 to 6,000 minutes per month.’ The change actually begins November 3, 2026.",
+      "should_trigger": true
+    },
+    {
+      "id": 11,
+      "prompt": "The README says the worker uses PostgreSQL, but our integration test deadlocks. Inspect the SQL and fix the locking bug. Leave documentation unchanged.",
+      "should_trigger": false
+    },
+    {
+      "id": 12,
+      "prompt": "Implement this parser error exactly as specified: `invalid record: missing id`. Add the validation branch and a unit test; do not revise the message wording.",
+      "should_trigger": false
+    },
+    {
+      "id": 13,
+      "prompt": "Extract the installation command from README.md and return it verbatim. Don't edit the file or explain the command.",
+      "should_trigger": false
+    },
+    {
+      "id": 14,
+      "prompt": "Run the repository's Markdown formatter and report whether it passes. Do not review or rewrite prose.",
+      "should_trigger": false
+    },
+    {
+      "id": 15,
+      "prompt": "Install the Ghostwriter skill with npx skills in this project and show me which files the installer added.",
+      "should_trigger": false
+    },
+    {
+      "id": 16,
+      "prompt": "The incident is still happening: use the metrics and deployment logs to find why upload requests return 503. Diagnose the service; no customer update is needed yet.",
+      "should_trigger": false
+    },
+    {
+      "id": 17,
+      "prompt": "Convert these strings into a JSON array, preserving every character: ‘world-class infrastructure’, ‘No data was lost’, ‘utilize the dashboard’. Return JSON only.",
+      "should_trigger": false
+    },
+    {
+      "id": 18,
+      "prompt": "Calculate 141 divided by 212 as a percentage rounded to two decimal places. Return only the number and percent sign.",
+      "should_trigger": false
+    },
+    {
+      "id": 19,
+      "prompt": "Create a GitHub Actions workflow that runs pnpm test on pull requests using Node.js 22. This is a CI configuration task; return the YAML file.",
+      "should_trigger": false
+    },
+    {
+      "id": 20,
+      "prompt": "Find every broken relative link and fragment anchor in docs/. Report file and line only; don't judge wording or propose text edits.",
+      "should_trigger": false
+    }
+  ]
+}
