@@ -19,6 +19,7 @@
   "author": "Azat S. <to@azat.io>",
   "type": "module",
   "scripts": {
+    "ci:changelog": "changelogithub",
     "eval": "node scripts/run-evaluations.js",
     "release": "pnpm release:check && pnpm release:version && pnpm release:prepare && pnpm release:git",
     "release:check": "pnpm test",
